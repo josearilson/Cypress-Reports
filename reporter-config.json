@@ -1,7 +1,7 @@
 {
   "reporterEnabled": "mochawesome",
   "mochawesomeReporterOptions": {
-    "reportDir": "cypress/reports",
+    "reportDir": "reports/mochawesome",
     "charts": true,
     "reportPageTitle": "My Test Suite",
     "embeddedScreenshots": true,
