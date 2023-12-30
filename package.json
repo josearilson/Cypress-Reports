@@ -31,6 +31,8 @@
   },
   "dependencies": {
     "cypress": "^10.9.0",
-    "cypress-plugin-api": "^1.2.3"
+    "cypress-plugin-api": "^1.2.3",
+    "qs": "^6.11.2",
+    "upgrade": "^1.1.0"
   }
 }
