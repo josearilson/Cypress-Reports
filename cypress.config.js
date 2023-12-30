@@ -2,7 +2,7 @@ const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
   video: false,
-reporter: '../node_modules/cypress-mochawesome-reporter,
+reporter: "cypress-multi-reporters",
   reporterOptions: {
     configFile: 'reporter-config.json',
   },
