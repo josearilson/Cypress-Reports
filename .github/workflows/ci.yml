@@ -35,3 +35,6 @@ jobs:
 
     - name: Clean Reports
       run: yarn report:clean
+
+    - name: Generate Mochawesome HTML Report
+      run: yarn marge --reportDir=reports --reportFilename=index
