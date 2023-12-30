@@ -16,5 +16,8 @@ jobs:
         uses: cypress-io/github-action@v6
       - run: npm run report:merge
       - run: npm run report:mocha
-      - name: Generate Mochawesome HTML Report
-        run: npm run marge --reportDir=reports --reportFilename=index
+      - name: Upload Mochawesome Report
+        uses: actions/upload-artifact@v2
+        with:
+          name: mochawesome-report
+          path: mochawesome-reportx
