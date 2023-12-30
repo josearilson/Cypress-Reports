@@ -6,9 +6,8 @@ module.exports = defineConfig({
   reporterOptions: {
     configFile: 'reporter-config.json',
   },
+  integrationFolder: 'cypress/integration', // ajuste conforme a sua estrutura de pastas
   e2e: {
-    // We've imported your old cypress plugins here.
-    // You may want to clean this up later by importing these.
     setupNodeEvents(on, config) {
       return require('./cypress/plugins/index.js')(on, config)
     },
