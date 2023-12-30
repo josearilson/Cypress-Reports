@@ -6,7 +6,8 @@
   "scripts": {
     "cypress:open": "cypress open --config-file=cypress.config.js",
     "cy:run": "npx cypress run",
-"report:merge": "mochawesome-merge cypress/reports/*.json > cypress/reports/mochawesome-report.json",
+ "report:merge": "mkdir -p cypress/reports && mochawesome-merge cypress/reports/*.json > cypress/reports/mochawesome-report.json",
+  
     "report:mocha": "marge cypress/reports/mochawesome-report.json --reportDir cypress/reports",
    
    
