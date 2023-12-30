@@ -8,7 +8,7 @@
     "cy:run": "npx cypress run",
       "report:merge": "mkdir -p cypress/reports && npx marge --reportDir cypress/reports --reportFilename mochawesome-report --saveJson",
   
-    "report:mocha": "marge cypress/reports/mochawesome-report.json --reportDir cypress/reports",
+    "report:mocha": "npx mochawesome-merge 'cypress/reports/*.json' > cypress/reports/mochawesome-report/mochawesome.json && npx marge cypress/reports/mochawesome-report/mochawesome.json -f report -o cypress/reports/mochawesome-report --autoOpen=true",
    
    
     "report:clean": "rimraf mochawesome-report index.js"
