@@ -4,7 +4,7 @@
   "description": "Repository created in the article REST API Tests with Cypress",
   "main": "index.js",
   "scripts": {
-    "cy:open": "npx cypress open",
+  "cypress:open": "cypress open --config-file=cypress.config.js",
     "cy:run": "npx cypress run",
     "report:merge": "mochawesome-merge > index.json",
     "report:mocha": "marge index.json",
