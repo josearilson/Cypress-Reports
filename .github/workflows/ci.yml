@@ -1,9 +1,12 @@
-name: Cypress Tests
+name: CI - Card Registration Automation
 
 on:
   push:
-  schedule:
-    - cron: "0 0 * * 1"
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 
 jobs:
